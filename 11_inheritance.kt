@@ -1,6 +1,6 @@
 package basic;
 
-// "open" : supports inheritance/overriding
+// "open" : supports inheritance or overriding
 open class Man(var name: String, var age: Int){
     open fun desc(){
         println("$name($age)")
