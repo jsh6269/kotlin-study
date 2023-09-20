@@ -1,6 +1,6 @@
 package basic;
 
-// open을 명시해야 상속, 오버라이딩 가능
+// "open class" : inheritance, overriding available
 open class Man(var name: String, var age: Int){
     open fun desc(){
         println("$name($age)")
@@ -28,7 +28,7 @@ fun main(){
     val m = Man("Goethe", 83)
     m.desc()
     
-    // 부모클래스 참조변수에서 호출해도 자식클래스에서 오버라이딩한 메소드가 호출됨
+    // overrided method(Student.desc) is called eventhough 'ss' is parent class type(Man)
     // Jang(23) got A
     val ss: Man = s
     ss.desc()

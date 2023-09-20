@@ -27,8 +27,4 @@ fun main() {
     println(d)
     println(PI)
 
-    // (type)? makes it possible to assign null
-    var n1: Int? = null
-    println(n1)
-
 }
